@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.ARMGCC.CPP</ToolchainName>
+    <ProjectGuid>{6fcc8c11-094c-4e8d-821d-90d9df242911}</ProjectGuid>
+    <avrdevice>ATSAM3X8E</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>Executable</OutputType>
+    <Language>CPP</Language>
+    <OutputFileName>$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.elf</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AssemblyName>HMC5883L_</AssemblyName>
+    <Name>HMC5883L_</Name>
+    <RootNamespace>HMC5883L_</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <AsfFrameworkConfig>
+      <framework-data>
+        <options />
+        <configurations />
+        <files />
+        <documentation help="" />
+        <offline-documentation help="" />
+        <dependencies>
+          <content-extension eid="atmel.asf" uuidref="Atmel.ASF" version="3.26.0" />
+        </dependencies>
+      </framework-data>
+    </AsfFrameworkConfig>
+    <preserveEEPROM>true</preserveEEPROM>
+    <ResetRule>0</ResetRule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../HMC5883L_</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../HMC5883L_</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.51\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.51\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../HMC5883L_;E:/Programy/Atmel Studio/Arduino/libraries;C:/Users/Mateusz Patyk/Documents/Arduino/libraries;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings xmlns="">
+        <ValidatedAS7>1</ValidatedAS7>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <ArmGccCpp>
+  <armgcc.common.outputfiles.hex>True</armgcc.common.outputfiles.hex>
+  <armgcc.common.outputfiles.lss>True</armgcc.common.outputfiles.lss>
+  <armgcc.common.outputfiles.eep>True</armgcc.common.outputfiles.eep>
+  <armgcc.common.outputfiles.bin>True</armgcc.common.outputfiles.bin>
+  <armgcc.common.outputfiles.srec>True</armgcc.common.outputfiles.srec>
+  <armgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </armgcc.compiler.symbols.DefSymbols>
+  <armgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../HMC5883L_</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </armgcc.compiler.directories.IncludePaths>
+  <armgcc.compiler.optimization.level>Optimize (-O1)</armgcc.compiler.optimization.level>
+  <armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcc.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcc.compiler.optimization.DebugLevel>Maximum (-g3)</armgcc.compiler.optimization.DebugLevel>
+  <armgcc.compiler.warnings.AllWarnings>True</armgcc.compiler.warnings.AllWarnings>
+  <armgcccpp.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>ARDUINO=10805</Value>
+      <Value>ARDUINO_MAIN</Value>
+      <Value>F_CPU=84000000L</Value>
+      <Value>printf=iprintf</Value>
+      <Value>__SAM__</Value>
+      <Value>ARDUINO_SAM_DUE</Value>
+      <Value>ARDUINO_ARCH_SAM</Value>
+      <Value>__SAM3X8E__</Value>
+      <Value>USB_VID=0x2341</Value>
+      <Value>USB_PID=0x003e</Value>
+      <Value>USBCON</Value>
+    </ListValues>
+  </armgcccpp.compiler.symbols.DefSymbols>
+  <armgcccpp.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>../../../HMC5883L_</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/Documents/Arduino/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include</Value>
+      <Value>E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include</Value>
+      <Value>C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL</Value>
+    </ListValues>
+  </armgcccpp.compiler.directories.IncludePaths>
+  <armgcccpp.compiler.optimization.level>Optimize (-O1)</armgcccpp.compiler.optimization.level>
+  <armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>True</armgcccpp.compiler.optimization.PrepareFunctionsForGarbageCollection>
+  <armgcccpp.compiler.optimization.DebugLevel>Maximum (-g3)</armgcccpp.compiler.optimization.DebugLevel>
+  <armgcccpp.compiler.warnings.AllWarnings>True</armgcccpp.compiler.warnings.AllWarnings>
+  <armgcccpp.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.Libraries>
+  <armgcccpp.linker.libraries.LibrarySearchPaths>
+    <ListValues>
+      <Value>%24(ProjectDir)\Device_Startup</Value>
+    </ListValues>
+  </armgcccpp.linker.libraries.LibrarySearchPaths>
+  <armgcccpp.linker.optimization.GarbageCollectUnusedSections>True</armgcccpp.linker.optimization.GarbageCollectUnusedSections>
+  <armgcccpp.linker.miscellaneous.LinkerFlags>-Tsam3x8e_flash.ld</armgcccpp.linker.miscellaneous.LinkerFlags>
+  <armgcccpp.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.51\include</Value>
+    </ListValues>
+  </armgcccpp.assembler.general.IncludePaths>
+  <armgcccpp.assembler.debugging.DebugLevel>Default (-g)</armgcccpp.assembler.debugging.DebugLevel>
+  <armgcccpp.preprocessingassembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\arm\cmsis\5.0.1\CMSIS\Include\</Value>
+      <Value>%24(PackRepoDir)\atmel\SAM3X_DFP\1.0.51\include</Value>
+    </ListValues>
+  </armgcccpp.preprocessingassembler.general.IncludePaths>
+  <armgcccpp.preprocessingassembler.debugging.DebugLevel>Default (-Wa,-g)</armgcccpp.preprocessingassembler.debugging.DebugLevel>
+</ArmGccCpp>
+    </ToolchainSettings>
+    <VMSETTING_IncludePaths>../../../HMC5883L_;E:/Programy/Atmel Studio/Arduino/libraries;C:/Users/Mateusz Patyk/Documents/Arduino/libraries;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/avr;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/cores/arduino/USB;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/variants/arduino_due_x;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/CMSIS/Include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/c++/4.8.3/arm-none-eabi/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/arm-none-eabi/include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/tools/arm-none-eabi-gcc/4.8.3-2014q1/lib/gcc/arm-none-eabi/4.8.3/include;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/libsam/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm-none-eabi/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/arm_none_eabi/include/;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include;E:/Programy/Atmel Studio/Arduino/hardware/tools/g++_arm_none_eabi/lib/gcc/arm-none-eabi/4.4.1/include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include/pio;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/CMSIS/CMSIS/Include/;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL/sam3xa/include;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/system/CMSIS/Device/ATMEL;C:/Users/Mateusz Patyk/AppData/Local/arduino15/packages/arduino/hardware/sam/1.6.11/libraries/Wire/src;</VMSETTING_IncludePaths>
+    <VisualMicroSettings>
+      <VisualMicroSettings xmlns="">
+        <ValidatedAS7>1</ValidatedAS7>
+      </VisualMicroSettings>
+    </VisualMicroSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Configs\Config.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Headers\HMC5883L.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Headers\I2C_Interface.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Headers\I2C_Sensor.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Headers\Status.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HMC5883L_.ino">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sources\HMC5883L.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sources\I2C_Interface.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="Sources\Status.cpp">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="__vm\.HMC5883L_.vsarduino.h">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Headers" />
+    <Folder Include="Configs" />
+    <Folder Include="Sources" />
+    <Folder Include="__vm\" />
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
